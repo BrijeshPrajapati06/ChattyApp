@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/profile_bg"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="22dp"
+            android:text="@string/txt_new_chat"
+            android:textSize="18sp"
+            android:fontFamily="@font/rubik_bold"
+            android:textColor="@color/dialog_btn_background" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/txt_cancel"
+                android:layout_marginEnd="10.5dp"
+                android:background="@drawable/search_bg">
+
+                <EditText
+                    android:id="@+id/search_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:background="@null"
+                    android:hint="@string/hint_search"
+                    android:drawableLeft="@drawable/ig_search_logo"
+                    android:drawablePadding="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/dialog_btn_background"
+                    android:fontFamily="@font/rubik_medium"
+                    android:layout_marginHorizontal="10dp"
+                    app:queryHint="@string/hint_search" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txt_cancel"
+                android:layout_width="48dp"
+                android:layout_height="17dp"
+                android:text="@string/txt_cancel"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="15dp"
+                android:layout_centerVertical="true"
+                android:textSize="14sp"
+                android:fontFamily="@font/rubik_medium"
+                android:textColor="@color/dark_blue"/>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/new_group_bg">
+
+            <RelativeLayout
+                android:id="@+id/rel_new_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+                
+                <ImageView
+                    android:id="@+id/img_user_friend"
+                    android:layout_width="36dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ig_userfriend_logo"/>
+                
+                <TextView
+                    android:id="@+id/txt_new_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="17dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/img_user_friend"
+                    android:paddingHorizontal="10dp"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/rubik_medium"
+                    android:text="@string/txt_new_group"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/dark_blue"
+                android:alpha="0.2" />
+
+            <RelativeLayout
+                android:id="@+id/rel_add_new_contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/img_user_plus"
+                    android:layout_width="36dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ig_addfriend_logo"/>
+
+                <TextView
+                    android:id="@+id/txt_new_contact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="17dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/img_user_plus"
+                    android:paddingHorizontal="10dp"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/rubik_medium"
+                    android:text="@string/txt_add_new_contact"/>
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+<!--        <androidx.recyclerview.widget.RecyclerView-->
+<!--            android:id="@+id/rcv_new_chat"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_marginTop="26dp"/>-->
+
+        <RelativeLayout
+        android:id="@+id/rel_main2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <RelativeLayout
+            android:id="@+id/rel_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/civ_user_profile"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/profile"/>
+
+            <ImageView
+                android:id="@+id/img_online_offline"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_marginHorizontal="19dp"
+                android:layout_marginTop="39dp"
+                android:src="@drawable/ig_online_logo" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toRightOf="@id/rel_profile"
+            android:layout_marginHorizontal="10dp"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@+id/txt_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jhone Deo"
+                android:textSize="14sp"
+                android:fontFamily="@font/rubik_medium"
+                android:textColor="@color/black_chat"/>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/black_chat"
+        android:alpha="0.2"
+        android:layout_marginHorizontal="20dp"/><RelativeLayout
+        android:id="@+id/rel_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <RelativeLayout
+            android:id="@+id/rel_profile1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/civ_user_profile1"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/profile"/>
+
+            <ImageView
+                android:id="@+id/img_online_offline1"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_marginHorizontal="19dp"
+                android:layout_marginTop="39dp"
+                android:src="@drawable/ig_online_logo" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_user_name1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toRightOf="@id/rel_profile1"
+            android:layout_marginHorizontal="10dp"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@+id/txt_user_name1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jhone Deo"
+                android:textSize="14sp"
+                android:fontFamily="@font/rubik_medium"
+                android:textColor="@color/black_chat"/>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/black_chat"
+        android:alpha="0.2"
+        android:layout_marginHorizontal="20dp"/>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/profile_bg"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp">
+
+        <TextView
+            android:layout_width="62dp"
+            android:layout_height="22dp"
+            android:text="@string/txt_profile"
+            android:textSize="18sp"
+            android:fontFamily="@font/rubik_bold"
+            android:textColor="@color/dialog_btn_background" />
+        
+        <TextView
+            android:id="@+id/txt_cancel"
+            android:layout_width="48dp"
+            android:layout_height="17dp"
+            android:text="@string/txt_cancel"
+            android:layout_alignParentEnd="true"
+            android:textSize="14sp"
+            android:fontFamily="@font/rubik_medium"
+            android:textColor="@color/dark_blue"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_profile"
+            android:layout_width="136dp"
+            android:layout_height="136dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/profile" />
+
+        <ImageView
+            android:id="@+id/img_edit"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignRight="@id/img_profile"
+            android:layout_marginTop="140dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/ig_edit_logo" />
+
+        <TextView
+            android:id="@+id/txt_remove_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:text="@string/txt_remove_profile"
+            android:textColor="@color/red"
+            android:textSize="14sp"
+            android:fontFamily="@font/rubik_medium"
+            android:layout_below="@id/img_profile"/>
+        
+        <View
+            android:layout_width="100dp"
+            android:layout_height="1dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/txt_remove_profile"
+            android:background="@color/red"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="22dp">
+
+        <EditText
+            android:id="@+id/txt_phone_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:padding="10dp"
+            android:textSize="16sp"
+            android:hint="5656565656"
+            android:clickable="false"
+            android:background="@drawable/rectangle_shape_line"
+            android:textColor="@color/dark_white"
+            android:fontFamily="@font/rubik_regular"/>
+
+        <EditText
+            android:id="@+id/txt_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:padding="10dp"
+            android:textSize="16sp"
+            android:singleLine="true"
+            android:text="Jayesh"
+            android:maxLength="25"
+            android:background="@drawable/rectangle_shape_line"
+            android:layout_below="@id/txt_phone_no"
+            android:textColor="@color/dialog_btn_background"
+            android:fontFamily="@font/rubik_regular"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

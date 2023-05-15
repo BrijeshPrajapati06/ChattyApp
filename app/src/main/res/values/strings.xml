@@ -1,0 +1,56 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Chatty App</string>
+
+    <string name="chat_name">Chatty</string>
+    <string name="intro_chatty">Chatty it\'s tied to a powerful social media platform that consistently attracts and engages new users. chat threads are easy to initiate. simply click on the "send message" button and it triggers an immediate conversation. "Easy to use on computer &amp; Mobile</string>
+    <string name="get_start">Get Start</string>
+    <string name="wel_come">Welcome to Chatty</string>
+    <string name="privacy_service">Read our Privacy Policy. Tap Continue \nAccept the Terms of Services.</string>
+    <string name="conti_nue">Continue</string>
+    <string name="mobile_num">Enter your mobile number</string>
+    <string name="verify_mobile_num">Send an SMS Massage to verify your Mobile Number</string>
+    <string name="select_cont">Select Contry</string>
+    <string name="hint_num">+91</string>
+    <string name="hint_mobile_number">Enter Mobile Number</string>
+    <string name="txt_select_country">Select Country</string>
+    <string name="txt_verify_mobile_number">Verify mobile number</string>
+    <string name="txt_verify_mobile_details">Verify your mobile number we send OTP</string>
+    <string name="txt_edit_number">Edit Number?</string>
+    <string name="txt_enter_digit_otp">Enter 4 Digit OTP</string>
+    <string name="txt_resend_otp">Resend OTP</string>
+    <string name="txt_verify">Verify</string>
+    <string name="btn_txt_next">Next</string>
+    <string name="txt_profile_image_name">Profile Image &amp; Name</string>
+    <string name="txt_profile">Profile</string>
+    <string name="txt_name">Name</string>
+    <string name="txt_please_provide_details">Please Provide your name &amp; an optional profile photo</string>
+    <string name="txt_wait_for_chatty">Wait for Chatty</string>
+    <string name="txt_just_few_seconds">Just For Few Seconds</string>
+    <string name="txt_image_upload">Image Upload</string>
+    <string name="btn_txt_camera">Camera</string>
+    <string name="btn_txt_gallery">Gallery</string>
+    <string name="txt_setting">Setting</string>
+    <string name="txt_img_">Please select image from "Gallery &amp; Camera"</string>
+    <string name="txt_recent_chats">Recent Chats</string>
+    <string name="txt_new_chat">New Chat</string>
+    <string name="hint_search">Search</string>
+    <string name="txt_cancel">Cancel</string>
+    <string name="txt_new_group">New group</string>
+    <string name="txt_add_new_contact">Add new contact</string>
+    <string name="txt_remove_profile">Remove Profile</string>
+    <string name="txt_linked_devices">Linked devices</string>
+    <string name="txt_my_account">My Account</string>
+    <string name="txt_chat">Chat</string>
+    <string name="txt_help">Help &amp; FAQ</string>
+    <string name="txt_img">Please select image from "Gallery &amp; Camera"</string>
+
+    <style name="login" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:statusBarColor" tools:targetApi="l">@color/white</item>
+        <item name="android:windowLightStatusBar" tools:ignore="NewApi">true</item>
+        <item name="android:colorBackground">@color/white</item>
+    </style>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>
